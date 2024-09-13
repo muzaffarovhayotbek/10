@@ -83,6 +83,12 @@ li {
     background-color: #145e76;
     border: none;
     color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .header-button:active{
+    background-color: #45a049; /* Tugma bosilganda rangni o'zgartirish */
+    transform: scale(0.98); /* Tugma kichrayadi */
   }
 }
 .main__container {
@@ -404,16 +410,14 @@ img {
   }
   .article-title {
     text-align: center;
-  
+
     a {
-   
       font-size: 2px;
-    
     }
-  
+
     h2 {
       padding-bottom: 40px;
-  
+
       margin-top: 25px;
       font-family: "Inter";
       font-size: 45px;
@@ -423,7 +427,7 @@ img {
       color: #08546c;
     }
   }
-  
+
   .article-main {
     gap: 26px;
     display: flex;
@@ -454,7 +458,7 @@ img {
     }
     p {
       color: #696969;
-  
+
       padding-top: 10px;
       font-family: "Inter";
       font-size: 16px;
@@ -475,7 +479,7 @@ img {
     height: 251px;
     background-color: #08546c;
     padding: 32px 29px;
-  
+
     h2 {
       font-family: "Inter";
       font-size: 24px;
@@ -496,7 +500,7 @@ img {
     transform: translateY(-10px); /* Hover holatda kartani ko'tarish */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover holatda soyani kattalashtirish */
   }
-  
+
   .article-visual {
     background-color: white;
     border-radius: 10px;
@@ -509,7 +513,7 @@ img {
     height: 251px;
     padding: 32px 29px;
     background-color: #ffffff;
-  
+
     h2 {
       font-family: "Inter";
       font-size: 24px;
@@ -517,7 +521,7 @@ img {
       line-height: 29.05px;
       color: #0f1221;
     }
-  
+
     p {
       font-family: "Inter";
       font-size: 16px;
@@ -542,7 +546,7 @@ img {
     height: 251px;
     background-color: #ffffff;
     padding: 32px 29px;
-  
+
     h2 {
       font-family: "Inter";
       font-size: 24px;
@@ -562,114 +566,112 @@ img {
     transform: translateY(-10px); /* Hover holatda kartani ko'tarish */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover holatda soyani kattalashtirish */
   }
-  
 }
-
 
 /* Media Queries */
 @media (max-width: 1920px) {
   .container {
-      max-width: 1440px;
+    max-width: 1440px;
   }
 }
 
 @media (max-width: 1440px) {
   .main-left h1 {
-      font-size: 50px;
+    font-size: 50px;
   }
   .main-left p {
-      width: 450px;
+    width: 450px;
   }
   .main-div {
-      width: 250px;
-      left: 500px;
+    width: 250px;
+    left: 500px;
   }
   .div {
-      width: 1000px;
-      height: 300px;
+    width: 1000px;
+    height: 300px;
   }
 }
 
 @media (max-width: 992px) {
   .header__container {
-      flex-direction: column;
+    flex-direction: column;
   }
   .header-section1 ul {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
   .header-section2 {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
   .main-left h1 {
-      font-size: 40px;
+    font-size: 40px;
   }
   .main-left p {
-      width: 350px;
+    width: 350px;
   }
   .main-div {
-      width: 200px;
-      left: 400px;
+    width: 200px;
+    left: 400px;
   }
   .div {
-      width: 800px;
-      height: 250px;
+    width: 800px;
+    height: 250px;
   }
   .article-main {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 768px) {
   .header__container {
-      padding: 0 20px;
+    padding: 0 20px;
   }
   .header-section1 ul {
-      gap: 15px;
+    gap: 15px;
   }
   .main-left h1 {
-      font-size: 36px;
+    font-size: 36px;
   }
   .main-left p {
-      width: 300px;
+    width: 300px;
   }
   .main-div {
-      width: 180px;
-      left: 300px;
+    width: 180px;
+    left: 300px;
   }
   .div {
-      width: 600px;
-      height: 200px;
+    width: 600px;
+    height: 200px;
   }
   .article-main {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 568px) {
   .header-section1 ul {
-      display: block;
-      text-align: center;
+    display: block;
+    text-align: center;
   }
   .header-section1 ul a {
-      font-size: 16px;
+    font-size: 16px;
   }
   .main-left h1 {
-      font-size: 28px;
+    font-size: 28px;
   }
   .main-left p {
-      width: 100%;
+    width: 100%;
   }
   .main-div {
-      width: 150px;
-      left: 200px;
+    width: 150px;
+    left: 200px;
   }
   .div {
-      width: 100%;
-      height: 150px;
+    width: 100%;
+    height: 150px;
   }
   .article-main {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
